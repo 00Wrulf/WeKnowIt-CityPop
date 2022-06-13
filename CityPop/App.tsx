@@ -13,6 +13,8 @@ import CResult from './screens/cityResult'
 enableScreens()
 const Stack = createNativeStackNavigator()
 
+// Screen control
+
 export default function App () {
   return (
     <NavigationContainer>
