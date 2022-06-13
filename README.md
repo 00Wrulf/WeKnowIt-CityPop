@@ -12,7 +12,7 @@ Expo: ~45.0.0
 ```
 
 ## Hur man startar appen
-Laddar ner git-repot: `git clone https://github.com/00Wrulf/WeKnowIt-CityPop.git`
+Kopiera git-repot: `git clone https://github.com/00Wrulf/WeKnowIt-CityPop.git`
 
 Gå in i den rätta mappen: `cd WeKnowIt-CityPop/CityPop`                     
 
