@@ -1,3 +1,4 @@
+// General api call
 const GeoNames = {
   apiCall (params) { // Making a call to the GeoNames API with the selected parameters
     return fetch('http://api.geonames.org/search?type=json&username=weknowit&' + params)
