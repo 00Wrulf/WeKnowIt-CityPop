@@ -6,11 +6,14 @@ import CustomButton from '../components/customButton'
 
 import APICall from '../api/geonames'
 
+// Search for a country
+
 const CountrySearch = ({ navigation }) => {
   const [country, onChangeCountry] = useState('Enter a city')
   const [isLoading, setLoading] = useState(false)
 
-  const searchCountry = () => { // Function to search for the given city. Sets Loading to true while searching
+  // Uses the data from the api do search for a given country and returns the biggest cities, error messages if unable to find city
+  const searchCountry = () => {
     setLoading(true)
     APICall.searchCountry(country)
       .then(data => {
@@ -27,6 +30,7 @@ const CountrySearch = ({ navigation }) => {
       )
   }
 
+  // Return view with custom button and standard loading indicator
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Search a Country</Text>
@@ -41,6 +45,7 @@ const CountrySearch = ({ navigation }) => {
 export default CountrySearch
 
 // Styling
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,

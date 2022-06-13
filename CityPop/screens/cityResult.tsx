@@ -3,11 +3,14 @@ import { StyleSheet, Text, View, Alert, TouchableOpacity, ActivityIndicator } fr
 
 import APICall from '../api/geonames'
 
+// Biggest cities
+
 export default function CityResult ({ route, navigation }) {
   const [currCity, onChangeCity] = useState(null)
   const [isLoading, setLoading] = useState(false)
 
-  const searchCity = (city) => { // Function to search for the given city. Sets Loading to true while searching
+  // Uses the data from countrySearch to get the specific cities, error messages if error occurs
+  const searchCity = (city) => {
     setLoading(true)
     onChangeCity(city)
     APICall.searchCity(city)
@@ -22,6 +25,7 @@ export default function CityResult ({ route, navigation }) {
       )
   }
 
+  // View for the cities page, route part creates a view style for each card
   return (
 
     <View style={styles.container}>
@@ -43,6 +47,8 @@ export default function CityResult ({ route, navigation }) {
     </View>
   )
 }
+
+// Styling
 
 const styles = StyleSheet.create({
   container: {

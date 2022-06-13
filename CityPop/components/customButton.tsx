@@ -1,6 +1,8 @@
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity } from 'react-native'
 
+// Custom button function
+
 export default function CustomButton ({ text, onPress }) {
   return (
     <TouchableOpacity style={styles.button} onPress={onPress}>
@@ -8,6 +10,8 @@ export default function CustomButton ({ text, onPress }) {
     </TouchableOpacity>
   )
 }
+
+// Styling
 
 const styles = StyleSheet.create({
   button: {

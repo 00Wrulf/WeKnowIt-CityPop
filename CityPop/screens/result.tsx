@@ -19,6 +19,8 @@ export default function ResultScreen ({ route, navigation }) {
   )
 }
 
+// Styling
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,

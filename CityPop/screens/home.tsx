@@ -4,6 +4,8 @@ import { StyleSheet, Text, View } from 'react-native'
 
 import CustomButton from '../components/customButton'
 
+// Home screen with navigation buttons refering to App.tsx
+
 const Home = ({ navigation }) => {
   return (
     <View style={styles.container}>
@@ -21,6 +23,7 @@ const Home = ({ navigation }) => {
 export default Home
 
 // Styling
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
