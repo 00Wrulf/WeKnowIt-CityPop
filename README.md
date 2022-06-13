@@ -18,6 +18,6 @@ Gå in i den rätta mappen: `cd WeKnowIt-CityPop/CityPop`
 
 Installera dependancies: `npm install`
 
-starta: `expo start`
+starta: `expo start` (Välj hur du vill öppna, primärt arbetad med på iOs simulator)
 ### Av: 
 Daniel Wärulf
